@@ -1,0 +1,11 @@
+<% include partials/header %>
+	<div>
+		<h1>The Post Page!!</h1>
+		<% books.forEach(function(boo){ %>
+			<li>
+				<%= boo.title %> - <%= boo.author %>
+					
+			</li>
+		<% }); %>
+	</div>
+<% include partials/footer %>
